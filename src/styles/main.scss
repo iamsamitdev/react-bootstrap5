@@ -1,0 +1,67 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+// Clear Button Outline
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus{
+    outline: none;
+    box-shadow: none;
+}
+
+// Clear Input Outline
+.form-control:focus,.form-control:active:focus,.form-control.active:focus,
+.form-control.focus,.form-control:active.form-control,.form-control.active.focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control:focus{
+    border-color: #757575;
+    border-width: 2px;
+}
+
+// Custom Some Button
+$feature-bg: #00bfa5;
+$hover-color: #ffffff;
+
+.btn-feature {
+  @include button-variant($feature-bg,darken($feature-bg, 3%));
+
+  // optitional
+  color: #ffffff;
+}
+
+// Custom navbar background
+.bg-light{
+    background-color: #757575;
+}
+
+// Custom Navbar Toggle
+.navbar-toggler{
+    border-width: 0px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+// Custom navbar link
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 18px;
+}
+
+// Custome Other
+
+body{
+    font-family: 'Prompt', sans-serif;
+}
+
+.content{
+    margin-top: 80px;
+}
+
+footer{
+    background-color: #000000;
+    padding: 15px 0px;
+    color: #ffffff;
+}
